@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>AmbientEffects</name>
+    <author>Scurvyez</author>
+    <packageId>Scurvyez.AmbientEffects</packageId>
+    <supportedVersions>
+        <li>1.4</li>
+    </supportedVersions>
+
+    <description>
+Discord: steveo.o
+steam: Scurvyez
+
+Let's give some life to the map!
+    </description>
+
+    <loadAfter>
+        <li>Ludeon.RimWorld</li>
+    </loadAfter>
+
+</ModMetaData>

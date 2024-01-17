@@ -1,0 +1,4 @@
+S:\Games\Steam\steamapps\common\RimWorld\Mods\AmbientEffects\1.4\Assemblies\AmbientEffects.dll
+S:\Games\Steam\steamapps\common\RimWorld\Mods\AmbientEffects\Source\AmbientEffects\obj\Debug\AmbientEffects.csproj.AssemblyReference.cache
+S:\Games\Steam\steamapps\common\RimWorld\Mods\AmbientEffects\Source\AmbientEffects\obj\Debug\AmbientEffects.csproj.CoreCompileInputs.cache
+S:\Games\Steam\steamapps\common\RimWorld\Mods\AmbientEffects\Source\AmbientEffects\obj\Debug\AmbientEffects.dll
