@@ -39,29 +39,10 @@ namespace AmbientEffects
                 Shader shader = shaderType?.Shader ?? ShaderDatabase.TransparentPostLight;
                 if (!materialPath.NullOrEmpty())
                 {
-                    if (materialPaths.NullOrEmpty())
+                    material = MaterialPool.MatFrom(new MaterialRequest(ContentFinder<Texture2D>.Get(materialPath), shader)
                     {
-                        IEnumerable<Texture2D> enumerable = from x in ContentFinder<Texture2D>.GetAllInFolder(materialPath)
-                                                            where !x.name.EndsWith(Graphic_Single.MaskSuffix)
-                                                            orderby x.name
-                                                            select x;
-                        materials = new List<Material>();
-                        foreach (Texture2D item in enumerable)
-                        {
-                            Material material = MaterialPool.MatFrom(new MaterialRequest(item, shader)
-                            {
-                                shaderParameters = shaderParameters
-                            });
-                            materials.Add(material);
-                        }
-                    }
-                    else
-                    {
-                        this.material = MaterialPool.MatFrom(new MaterialRequest(ContentFinder<Texture2D>.Get(materialPath), shader)
-                        {
-                            shaderParameters = shaderParameters
-                        });
-                    }
+                        shaderParameters = shaderParameters
+                    });
                 }
                 if (!materialPaths.NullOrEmpty())
                 {

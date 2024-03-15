@@ -28,6 +28,12 @@ namespace AmbientEffects
             }
         }
 
+        public override void MapComponentTick()
+        {
+            base.MapComponentTick();
+
+        }
+
         public void AddEffect(Effect effect)
         {
             ambientEffectsList.Add(effect);
@@ -44,7 +50,7 @@ namespace AmbientEffects
                 for (int i = 0; i < effectsToSpawn; i++)
                 {
                     IntVec3 randomCell = CellFinder.RandomCell(map);
-                    Effect_Particle newEffect = new Effect_Particle(effectDef, map, randomCell.ToVector3());
+                    Effect newEffect = new Effect_ParticleDrifting(effectDef, map, randomCell.ToVector3());
 
                     //Log.Message($"Spawned effect at position: {randomCell.x}, {randomCell.z}");
 

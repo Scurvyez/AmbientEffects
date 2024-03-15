@@ -31,6 +31,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="0Harmony, Version=2.2.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Lib.Harmony.2.2.2\lib\net472\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Assembly-CSharp">
       <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
@@ -47,17 +51,37 @@
       <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="UnityEngine.CoreModule">
       <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Effect_Particle.cs" />
-    <Compile Include="MapComponent_AmbientEffects.cs" />
-    <Compile Include="Effect.cs" />
-    <Compile Include="EffectDef.cs" />
+    <Compile Include="Other\Effect_ParticleDrifting.cs" />
+    <Compile Include="Other\Effect_Particle.cs" />
+    <Compile Include="Other\MapComponent_AmbientEffects.cs" />
+    <Compile Include="Other\Effect.cs" />
+    <Compile Include="Other\EffectDef.cs" />
+    <Compile Include="Harmony\CurrentNotify_LoadedSceneChanged_Postfix.cs" />
+    <Compile Include="PostProcessing\AEContentDatabase.cs" />
+    <Compile Include="PostProcessing\AEShaderTypeDef.cs" />
+    <Compile Include="PostProcessing\AEMod.cs" />
+    <Compile Include="PostProcessing\Assets.cs" />
+    <Compile Include="PostProcessing\MapComponent_ScreenPositionEffects.cs" />
+    <Compile Include="PostProcessing\FullScreenEffects.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

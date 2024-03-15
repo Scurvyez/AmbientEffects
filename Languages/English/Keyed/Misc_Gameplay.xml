@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+    <!--==================== Settings ====================-->
+
+    <AE_ModName>Ambient Effects</AE_ModName>
+
+    <!-- Screen Position Effects Settings -->
+    <AE_EnableScreenPositionEffects>Use position tracking screen effects?</AE_EnableScreenPositionEffects>
+    <AE_EnableScreenPositionEffectsDesc>Check to allow visual effects on the map with post processing.</AE_EnableScreenPositionEffectsDesc>
+
+</LanguageData>

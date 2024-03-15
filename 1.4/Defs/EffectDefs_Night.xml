@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-    <AmbientEffects.EffectDef>
+    <!-- <AmbientEffects.EffectDef>
         <defName>SZ_TestEffect</defName>
         <altitude>VisEffects</altitude>
         <materialPath>AmbientEffects/Effects/TESTING</materialPath>
         <shaderType>TransparentPostLight</shaderType>
         <count>10</count>
         <drawSize>(2, 1, 2)</drawSize>
-    </AmbientEffects.EffectDef>
+    </AmbientEffects.EffectDef> -->
 
 </Defs>

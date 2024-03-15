@@ -1,0 +1,7 @@
+ManifestFileVersion: 0
+CRC: 50090862
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: ambienteffectsbundle
+      Dependencies: {}
